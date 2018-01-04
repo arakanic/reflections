@@ -1,0 +1,95 @@
+git diff ...
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+> rather than searching for the bug line-by-line by physically comparing the two versions side-by-side, 
+> diff highlights the differences between the content of the files
+
+git log
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+> tracking the history of files saves users from having to search through the different versions
+> of a file and time that can be used to experiment & making further transformations
+
+git commit ...
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+> being able to "rewind" work allows more sharing, more experimentation, and could also reduce 
+> regret & nostalgia for older implementations whenever versions are saved automatically
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+> software is, more often than not, composed of multiple files, so functional changes to it will often 
+> involve multiple pieces of code in different files
+
+How can you use the commands git log and git diff to view the history of files?
+> git log allows you to view commit history for a file while git diff pinpoints the differences between 
+> the different versions committed
+
+How might using version control make you more confident to make changes that could break something?
+> by removing clutter & increasing access for users
+
+Now that you have your workspace set up, what do you want to try using Git for?
+> tinkering
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, 
+vs having versions automatically saved, like Google Docs does?
+> pro: being able to create commits logically, e.g. typo fixes, feature changes, etc
+> con: remembering to save & decide in which stages work/progress must be saved
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, 
+while others, like Google Docs, treat each file separately?
+> programs usually consist of multiple files, so it makes sense to save all files in a repository together
+
+How can you use the commands git log and git diff to view the history of files?
+> you can use git log to view commits by id w/ a description of each & the git diff command to compare two 
+> different commit ids and view the differences between them
+
+How might using version control make you more confident to make changes that could break something?
+> since you can switch between commits, you can always revert to older versions of a file that has been 
+> modified
+
+Now that you have your workspace set up, what do you want to try using Git for?
+> couldn't set it up because git bash doesn't seem to recognize the .bash-profile file on my pc; 
+> either way i'd like to be able to work on projects between my system and the internet with minimal
+> interruptions
+
+git init
+What happens when you initialize a repository? Why do you need to do it?
+> A repository is created in the current location; this will be used to commit files as they are changed
+> from the working directory to track and backtrack to different versions when necessary
+
+How is the staging area different from the working directory and the repository? What value do you 
+think it offers?
+> the staging area has files from the working directory that has been added before being directly committed
+> to git. this could allow for a pre-commit check with parent & sibling files already in git, 
+> perhaps being worked on by others
+
+How can you use the staging area to make sure you have one commit per logical change?
+> git diff presents the changes in files in your working directory with their versions in the staging area;
+> git diff --staged shows changes between files in the most recent commit & those in the staging area;
+> git diff commit-id-0 commit-id-1 displays differences between files in recent commits;
+> once files are updated and added to the staging area, we can utilize git diff --staged to compare files 
+> already committed with those in the staging area, then modify files as needed in the working directory 
+> until we establish a logical change that is good enough to be added & committed
+
+What are some situations when branches would be helpful in keeping your history organized? 
+How would branches help?
+> master branches almost always be exclusively production-quality that never breaks, always works;
+> development branch will be the main project for your active work; experimental branch can be used 
+> to develop & test new features that will be public with the understanding that it is a work in progress;
+> branches allow for collaboration, context-switching, compartmentalizing, etc
+
+How do the diagrams help you visualize the branch structure?
+> The diagram demonstrates the non-linear development with Git, particularly how Git logs commits according
+> to branch so that commits on two different branches may share a common ancestor but still have parents 
+> that are inaccessible from one another?
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+> Merging branches combines the commits from each branch specified & their associated modifications from 
+> each branch into a single branch.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+> Automatic merging saves some time & energy; on the other hand, merging manually allows more collaboration 
+> while resolving merge conflicts that may produce better or more efficient code than automatically merging 
+> commits or branches would
