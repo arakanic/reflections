@@ -1,3 +1,33 @@
 When would you want to use a remote repository rather than keeping all your work local?
 > For open-source projects and any other projects that require collaboration
 > 
+
+Why might you want to always pull changes manually rather than having Git automatically stay 
+up-to-date with your remote repository?
+> manually pulling changes from a remote repository only after logical steps such as updates, additions, 
+> deletions, rework, and so on, allows users to bring in only work that is coherent, as opposed to bringing 
+> in work mid-production
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+> a fork is a clone on a remote repository such as GitHub that creates a branch for one user to modify the 
+> existing work of another user, acknowledging their work without directly affecting their actual repository. 
+> a clone is a copy of a repository usually on a local server in a different directory but could be used to
+> refer to a copy made on a remote repository from an external origin.
+> a branch always refers to a clone repository made in the same local repository, almost like a "local fork"
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+> offline production on an ongoing project
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+> Either physically being present together when collaborating others or remotely via e-mail, which seems ripe for
+> more miscommunication than with an online project version control platform
+
+When would you want to make changes in a separate branch rather than directly in master? 
+What benefits does each approach have?
+> Testing features, experimentation, or anything else that is superfluous or unnecessary to the 
+> production-quality files contained in a master branch; while dealing with the master directly could be
+> simpler, it is much riskier considering with all the users who would be constantly affected by all the changes
+> implemented in the master
+
+ 
+
