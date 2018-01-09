@@ -14,7 +14,7 @@ git commit ...
 What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
-> being able to "rewind" work allows more sharing, more experimentation, and could also reduce 
+> being able to "rewind" work allows more sharing, more experimentation, and could also reduce the 
 > regret & nostalgia for older implementations whenever versions are saved automatically
 
 Why do you think some version control systems, like Git, allow saving multiple
@@ -34,7 +34,7 @@ Now that you have your workspace set up, what do you want to try using Git for?
 
 What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, 
 vs having versions automatically saved, like Google Docs does?
-> pro: being able to create commits logically, e.g. typo fixes, feature changes, etc
+> pro: being able to create commits after any logical steps such as typo fixes, feature changes, etc
 > con: remembering to save & decide in which stages work/progress must be saved
 
 Why do you think some version control systems, like Git, allow saving multiple files in one commit, 
@@ -76,9 +76,9 @@ How can you use the staging area to make sure you have one commit per logical ch
 What are some situations when branches would be helpful in keeping your history organized? 
 How would branches help?
 > master branches almost always be exclusively production-quality that never breaks, always works;
-> development branch will be the main project for your active work; experimental branch can be used 
+> a development branch will be the main project for ongoing active work; an experimental branch can be used 
 > to develop & test new features that will be public with the understanding that it is a work in progress;
-> branches allow for collaboration, context-switching, compartmentalizing, etc
+> bottom line: branches allow for collaboration, context-switching, compartmentalizing, etc
 
 How do the diagrams help you visualize the branch structure?
 > The diagram demonstrates the non-linear development with Git, particularly how Git logs commits according
@@ -90,6 +90,7 @@ What is the result of merging two branches together? Why do we represent it in t
 > each branch into a single branch.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
-> Automatic merging saves some time & energy; on the other hand, merging manually allows more collaboration 
-> while resolving merge conflicts that may produce better or more efficient code than automatically merging 
+> Automatic merging saves some time & energy; on the other hand, merging manually allows for collaboration 
+> while resolving conflicts that may produce more efficient, even better code than automatically merging 
 > commits or branches would
+

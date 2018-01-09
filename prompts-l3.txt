@@ -1,6 +1,5 @@
 When would you want to use a remote repository rather than keeping all your work local?
 > For open-source projects and any other projects that require collaboration
-> 
 
 Why might you want to always pull changes manually rather than having Git automatically stay 
 up-to-date with your remote repository?
@@ -19,8 +18,9 @@ What is the benefit of having a copy of the last known state of the remote store
 > offline production on an ongoing project
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
-> Either physically being present together when collaborating others or remotely via e-mail, which seems ripe for
-> more miscommunication than with an online project version control platform
+> Either by being physically present together when collaborating w/ others, or 
+> remotely via e-mail, something seems ripe for more miscommunication than an 
+> online project version control platform would have
 
 When would you want to make changes in a separate branch rather than directly in master? 
 What benefits does each approach have?
